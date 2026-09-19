@@ -1,0 +1,125 @@
+:root {
+  /* =========================
+     COLORES INSTITUCIONALES
+  ========================== */
+
+  --color-navy-950: #03101c;
+  --color-navy-900: #061827;
+  --color-navy-850: #0a2034;
+  --color-navy-800: #0d2942;
+  --color-navy-700: #173f68;
+  --color-navy-600: #285a88;
+
+  --color-blue-500: #4f7eaa;
+  --color-blue-300: #8aabc8;
+
+  --color-cream-50: #fbfaf6;
+  --color-cream-100: #f5f1e8;
+  --color-cream-200: #eee7db;
+
+  --color-gold-300: #efc572;
+  --color-gold-400: #e3ae54;
+  --color-gold-500: #ca9139;
+  --color-gold-600: #a36d24;
+
+  --color-white: #ffffff;
+  --color-black: #07090c;
+
+  --color-text: #10263e;
+  --color-text-soft: #56697b;
+  --color-text-light: #d8e2ec;
+
+  /* =========================
+     BORDES
+  ========================== */
+
+  --border-light: rgba(14, 42, 68, 0.12);
+  --border-medium: rgba(14, 42, 68, 0.22);
+  --border-dark: rgba(255, 255, 255, 0.1);
+
+  --border-gold: rgba(227, 174, 84, 0.45);
+
+  /* =========================
+     FONDOS
+  ========================== */
+
+  --background-page: #f7f5ef;
+  --background-white: #ffffff;
+
+  --background-navy:
+    linear-gradient(
+      180deg,
+      #071a2c 0%,
+      #04111d 100%
+    );
+
+  --background-glass:
+    rgba(6, 24, 39, 0.82);
+
+  /* =========================
+     TIPOGRAFÍAS
+  ========================== */
+
+  --font-display:
+    'Cormorant Garamond',
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  --font-body:
+    'Manrope',
+    Arial,
+    sans-serif;
+
+  /* =========================
+     TAMAÑOS
+  ========================== */
+
+  --navbar-height: 74px;
+
+  --container-max-width: 1220px;
+
+  --section-padding-desktop: 100px;
+  --section-padding-tablet: 80px;
+  --section-padding-mobile: 65px;
+
+  /* =========================
+     BORDER RADIUS
+  ========================== */
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  /* =========================
+     SOMBRAS
+  ========================== */
+
+  --shadow-small:
+    0 6px 20px rgba(8, 30, 50, 0.08);
+
+  --shadow-medium:
+    0 14px 45px rgba(8, 30, 50, 0.12);
+
+  --shadow-large:
+    0 30px 90px rgba(3, 16, 28, 0.2);
+
+  --shadow-gold:
+    0 15px 40px rgba(202, 145, 57, 0.22);
+
+  /* =========================
+     TRANSICIONES
+  ========================== */
+
+  --transition-fast:
+    160ms ease;
+
+  --transition-normal:
+    260ms ease;
+
+  --transition-slow:
+    500ms ease;
+}

@@ -1,0 +1,1560 @@
+/* ========================================
+   DIVULGACION PAGE
+======================================== */
+
+.divulgacion-page {
+  background: white;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.divulgacion-hero {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  color: white;
+
+  background:
+    url('/images/divulgacion/amauta/inauguracion.jpg');
+
+  background-size: cover;
+
+  background-position: center 45%;
+}
+
+
+.divulgacion-hero__overlay {
+  position: absolute;
+
+  z-index: -1;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 15, 27, .96) 0%,
+      rgba(3, 15, 27, .82) 36%,
+      rgba(3, 15, 27, .40) 68%,
+      rgba(3, 15, 27, .18) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(3, 15, 27, .72),
+      transparent 55%
+    );
+}
+
+
+.divulgacion-hero__container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 390px;
+
+  gap: 80px;
+
+  align-items: end;
+
+  padding-bottom: 70px;
+}
+
+
+.divulgacion-hero__content {
+  max-width: 800px;
+}
+
+
+.divulgacion-hero__eyebrow {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--color-gold-300);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .22em;
+}
+
+
+.divulgacion-hero h1 {
+  margin: 0 0 25px;
+
+  color: white;
+
+  font-size:
+    clamp(
+      65px,
+      8vw,
+      105px
+    );
+
+  line-height: .82;
+}
+
+
+.divulgacion-hero h1 span {
+  display: block;
+
+  color: var(--color-gold-300);
+}
+
+
+.divulgacion-hero__content p {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, .72);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+.divulgacion-hero__index {
+  border-top:
+    1px solid
+    rgba(255, 255, 255, .25);
+}
+
+
+.divulgacion-hero__index a {
+  display: grid;
+
+  grid-template-columns:
+    35px 1fr;
+
+  gap: 15px;
+
+  padding: 19px 0;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, .18);
+
+  color: white;
+
+  text-decoration: none;
+
+  transition:
+    padding-left .25s ease;
+}
+
+
+.divulgacion-hero__index a:hover {
+  padding-left: 8px;
+}
+
+
+.divulgacion-hero__index > a > span {
+  color: var(--color-gold-300);
+
+  font-family: var(--font-display);
+
+  font-size: 17px;
+}
+
+
+.divulgacion-hero__index strong {
+  display: block;
+
+  font-family: var(--font-display);
+
+  font-size: 20px;
+
+  font-weight: 500;
+}
+
+
+.divulgacion-hero__index small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: rgba(255, 255, 255, .52);
+
+  font-size: 8px;
+
+  letter-spacing: .1em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* ========================================
+   INTRO
+======================================== */
+
+.divulgacion-intro {
+  padding: 100px 0;
+
+  background: var(--color-cream-50);
+}
+
+
+.divulgacion-intro__grid {
+  display: grid;
+
+  grid-template-columns:
+    190px 1fr;
+
+  gap: 70px;
+}
+
+
+.divulgacion-intro__number {
+  color: var(--color-gold-400);
+
+  font-family: var(--font-display);
+
+  font-size: 145px;
+
+  line-height: .8;
+}
+
+
+.divulgacion-intro p {
+  max-width: 900px;
+
+  margin: 0;
+
+  color: var(--color-navy-900);
+
+  font-family: var(--font-display);
+
+  font-size:
+    clamp(
+      29px,
+      3vw,
+      42px
+    );
+
+  line-height: 1.25;
+}
+
+
+
+/* ========================================
+   GENERAL SECTION HEADING
+======================================== */
+
+.divulgacion-section-heading {
+  display: grid;
+
+  grid-template-columns:
+    1fr .65fr;
+
+  gap: 80px;
+
+  align-items: end;
+
+  margin-bottom: 60px;
+}
+
+
+.divulgacion-section-heading h2 {
+  margin: 0;
+
+  color: var(--color-navy-900);
+
+  font-size:
+    clamp(
+      52px,
+      6vw,
+      78px
+    );
+
+  line-height: .9;
+}
+
+
+.divulgacion-section-heading h2 span {
+  display: block;
+
+  color: var(--color-gold-500);
+}
+
+
+.divulgacion-section-heading > p {
+  max-width: 450px;
+
+  margin: 0;
+
+  color: var(--color-text-soft);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+
+/* ========================================
+   AMAUTA
+======================================== */
+
+.divulgacion-amauta {
+  padding: 120px 0;
+
+  background: white;
+
+  scroll-margin-top: 90px;
+}
+
+
+.amauta-gallery {
+  display: grid;
+
+  grid-template-columns:
+    1.45fr .75fr;
+
+  grid-template-rows:
+    280px 280px;
+
+  gap: 15px;
+
+  margin-bottom: 70px;
+}
+
+
+.amauta-gallery figure {
+  position: relative;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-cream-100);
+}
+
+
+.amauta-gallery__main {
+  grid-row: 1 / 3;
+}
+
+
+.amauta-gallery img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 800ms ease;
+}
+
+
+.amauta-gallery figure:hover img {
+  transform: scale(1.025);
+}
+
+
+.amauta-gallery figcaption {
+  position: absolute;
+
+  left: 18px;
+  bottom: 18px;
+
+  padding: 8px 12px;
+
+  border-radius: var(--radius-pill);
+
+  color: white;
+
+  background: rgba(3, 15, 27, .72);
+
+  backdrop-filter: blur(10px);
+
+  font-size: 9px;
+
+  letter-spacing: .08em;
+}
+
+
+.amauta-features {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  margin-bottom: 110px;
+
+  border-top:
+    1px solid
+    var(--border-light);
+
+  border-left:
+    1px solid
+    var(--border-light);
+}
+
+
+.amauta-feature {
+  min-height: 260px;
+
+  padding: 28px;
+
+  border-right:
+    1px solid
+    var(--border-light);
+
+  border-bottom:
+    1px solid
+    var(--border-light);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+
+.amauta-feature:hover {
+  z-index: 2;
+
+  transform: translateY(-5px);
+
+  box-shadow: var(--shadow-medium);
+}
+
+
+.amauta-feature > span {
+  color: var(--color-gold-500);
+
+  font-family: var(--font-display);
+
+  font-size: 18px;
+}
+
+
+.amauta-feature h3 {
+  margin:
+    70px 0 10px;
+
+  color: var(--color-navy-900);
+
+  font-size: 27px;
+}
+
+
+.amauta-feature p {
+  margin: 0;
+
+  color: var(--color-text-soft);
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+
+.amauta-detail {
+  display: grid;
+
+  grid-template-columns:
+    .7fr 1.3fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+.amauta-detail__text h3 {
+  max-width: 500px;
+
+  margin-bottom: 22px;
+
+  color: var(--color-navy-900);
+
+  font-size:
+    clamp(
+      40px,
+      4vw,
+      58px
+    );
+
+  line-height: .95;
+}
+
+
+.amauta-detail__text p {
+  max-width: 480px;
+
+  color: var(--color-text-soft);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+.amauta-detail__images {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 15px;
+}
+
+
+.amauta-detail__images figure {
+  margin: 0;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-navy-900);
+}
+
+
+.amauta-detail__images img {
+  width: 100%;
+
+  height: 370px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+.amauta-detail__images figcaption {
+  padding: 12px 15px;
+
+  color: rgba(255, 255, 255, .65);
+
+  font-size: 9px;
+}
+
+
+
+/* ========================================
+   QUOTE
+======================================== */
+
+.divulgacion-quote {
+  padding: 105px 0;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(57, 100, 138, .22),
+      transparent 45%
+    ),
+    var(--background-navy);
+}
+
+
+.divulgacion-quote span {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: var(--color-gold-300);
+
+  font-size: 25px;
+}
+
+
+.divulgacion-quote blockquote {
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  font-family: var(--font-display);
+
+  font-size:
+    clamp(
+      39px,
+      5vw,
+      66px
+    );
+
+  line-height: 1.02;
+}
+
+
+.divulgacion-quote blockquote strong {
+  display: block;
+
+  color: var(--color-gold-300);
+
+  font-weight: 500;
+}
+
+
+
+/* ========================================
+   TOURISM
+======================================== */
+
+.divulgacion-tourism {
+  padding: 120px 0;
+
+  background: var(--color-cream-50);
+
+  scroll-margin-top: 90px;
+}
+
+
+.tourism-hero {
+  position: relative;
+
+  height: 590px;
+
+  margin-bottom: 110px;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+}
+
+
+.tourism-hero > img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+.tourism-hero::after {
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 45%,
+      rgba(3, 15, 27, .65)
+    );
+}
+
+
+.tourism-hero__card {
+  position: absolute;
+
+  z-index: 2;
+
+  right: 45px;
+  bottom: 45px;
+
+  width: 290px;
+
+  padding: 30px;
+
+  border:
+    1px solid
+    rgba(227, 174, 84, .45);
+
+  border-radius: var(--radius-md);
+
+  color: white;
+
+  background: rgba(3, 15, 27, .90);
+
+  backdrop-filter: blur(16px);
+}
+
+
+.tourism-hero__card span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--color-gold-300);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: .18em;
+}
+
+
+.tourism-hero__card strong {
+  display: block;
+
+  font-family: var(--font-display);
+
+  font-size: 40px;
+
+  font-weight: 500;
+
+  line-height: .95;
+}
+
+
+.tourism-hero__card small {
+  display: block;
+
+  margin-top: 14px;
+
+  color: rgba(255, 255, 255, .55);
+
+  font-size: 9px;
+}
+
+
+.tourism-story {
+  display: grid;
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+  margin-bottom: 100px;
+}
+
+
+.tourism-story__copy h3 {
+  margin-bottom: 25px;
+
+  color: var(--color-navy-900);
+
+  font-size:
+    clamp(
+      41px,
+      4vw,
+      58px
+    );
+
+  line-height: .95;
+}
+
+
+.tourism-story__copy p {
+  color: var(--color-text-soft);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+.tourism-story__image {
+  margin: 0;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: white;
+
+  box-shadow: var(--shadow-medium);
+}
+
+
+.tourism-story__image img {
+  width: 100%;
+
+  height: 470px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+.tourism-story__image figcaption {
+  padding: 12px 16px;
+
+  color: var(--color-text-soft);
+
+  background: white;
+
+  font-size: 9px;
+}
+
+
+
+/* MOON + JUPITER */
+
+.tourism-celestial {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 20px;
+
+  margin-bottom: 110px;
+}
+
+
+.tourism-celestial figure {
+  margin: 0;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: var(--background-navy);
+}
+
+
+.tourism-celestial__image {
+  height: 420px;
+
+  overflow: hidden;
+}
+
+
+.tourism-celestial__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 700ms ease;
+}
+
+
+.tourism-celestial figure:hover img {
+  transform: scale(1.03);
+}
+
+
+.tourism-celestial figcaption {
+  display: grid;
+
+  grid-template-columns:
+    45px 1fr;
+
+  gap: 15px;
+
+  padding: 25px;
+
+  color: white;
+}
+
+
+.tourism-celestial figcaption > span {
+  color: var(--color-gold-300);
+
+  font-family: var(--font-display);
+
+  font-size: 18px;
+}
+
+
+.tourism-celestial strong {
+  display: block;
+
+  font-family: var(--font-display);
+
+  font-size: 25px;
+
+  font-weight: 500;
+}
+
+
+.tourism-celestial small {
+  color: rgba(255, 255, 255, .52);
+
+  font-size: 9px;
+}
+
+
+
+/* STUDENT TRIPS */
+
+.student-trips {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr .9fr;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-navy-900);
+
+  box-shadow: var(--shadow-medium);
+}
+
+
+.student-trips__image {
+  min-height: 450px;
+}
+
+
+.student-trips__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+.student-trips__content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 55px;
+
+  color: white;
+}
+
+
+.student-trips__content > span {
+  margin-bottom: 15px;
+
+  color: var(--color-gold-300);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .2em;
+}
+
+
+.student-trips__content h3 {
+  margin-bottom: 20px;
+
+  font-size:
+    clamp(
+      40px,
+      4vw,
+      58px
+    );
+}
+
+
+.student-trips__content p {
+  color: rgba(255, 255, 255, .66);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+.student-trips__line {
+  width: 55px;
+  height: 1px;
+
+  margin: 24px 0;
+
+  background: var(--color-gold-300);
+}
+
+
+.student-trips__content small {
+  color: rgba(255, 255, 255, .43);
+
+  font-size: 8px;
+
+  letter-spacing: .18em;
+}
+
+
+
+/* ========================================
+   IYA 2009
+======================================== */
+
+.divulgacion-iya {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 120px 0;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(62, 106, 147, .25),
+      transparent 35%
+    ),
+    var(--background-navy);
+
+  scroll-margin-top: 90px;
+}
+
+
+.divulgacion-iya__stars {
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .2;
+
+  background-image:
+    radial-gradient(
+      circle,
+      white 0 1px,
+      transparent 1.2px
+    );
+
+  background-size: 135px 135px;
+
+  pointer-events: none;
+}
+
+
+.iyа-header {
+  position: relative;
+}
+
+
+/* important: latin version below */
+.iya-header {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr auto;
+
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 70px;
+}
+
+
+.iya-header__eyebrow {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: var(--color-gold-300);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .2em;
+}
+
+
+.iya-header h2 {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: white;
+
+  font-size:
+    clamp(
+      55px,
+      7vw,
+      90px
+    );
+
+  line-height: .87;
+}
+
+
+.iya-header h2 span {
+  display: block;
+
+  color: var(--color-gold-300);
+}
+
+
+.iya-stat {
+  width: 230px;
+
+  padding-left: 30px;
+
+  border-left:
+    1px solid
+    rgba(227, 174, 84, .45);
+}
+
+
+.iya-stat strong {
+  display: block;
+
+  color: var(--color-gold-300);
+
+  font-family: var(--font-display);
+
+  font-size: 80px;
+
+  font-weight: 500;
+
+  line-height: .8;
+}
+
+
+.iya-stat > span {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: .2em;
+}
+
+
+.iya-stat p {
+  color: rgba(255, 255, 255, .55);
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+.iya-info {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    .5fr 1fr;
+
+  gap: 80px;
+
+  align-items: start;
+
+  margin-bottom: 60px;
+
+  padding-top: 30px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, .13);
+}
+
+
+.iya-info > div span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: var(--color-gold-300);
+
+  font-size: 9px;
+
+  letter-spacing: .16em;
+}
+
+
+.iya-info > div strong {
+  font-family: var(--font-display);
+
+  font-size: 25px;
+
+  font-weight: 500;
+}
+
+
+.iya-info p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, .65);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+/* IYA GALLERY */
+
+.iya-gallery {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  grid-auto-rows: 245px;
+
+  gap: 12px;
+}
+
+
+.iya-gallery__item {
+  margin: 0;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-sm);
+}
+
+
+.iya-gallery__item--large {
+  grid-column: span 2;
+
+  grid-row: span 2;
+}
+
+
+.iya-gallery__item img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 700ms ease;
+}
+
+
+.iya-gallery__item:hover img {
+  transform: scale(1.03);
+}
+
+
+
+/* ========================================
+   FINAL
+======================================== */
+
+.divulgacion-final {
+  padding: 110px 0;
+
+  background: white;
+}
+
+
+.divulgacion-final__grid {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr .9fr;
+
+  gap: 90px;
+
+  align-items: end;
+}
+
+
+.divulgacion-final h2 {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: var(--color-navy-900);
+
+  font-size:
+    clamp(
+      48px,
+      5vw,
+      68px
+    );
+
+  line-height: .95;
+}
+
+
+.divulgacion-final h2 span {
+  display: block;
+
+  color: var(--color-gold-500);
+}
+
+
+.divulgacion-final__content p {
+  max-width: 500px;
+
+  margin-bottom: 30px;
+
+  color: var(--color-text-soft);
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+.divulgacion-final__actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+  .divulgacion-hero__container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .divulgacion-hero__index {
+    max-width: 550px;
+  }
+
+
+  .divulgacion-intro__grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .divulgacion-intro__number {
+    font-size: 100px;
+  }
+
+
+  .divulgacion-section-heading {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .amauta-features {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .amauta-detail {
+    grid-template-columns: 1fr;
+  }
+
+
+  .tourism-story {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .student-trips {
+    grid-template-columns: 1fr;
+  }
+
+
+  .iya-header {
+    grid-template-columns: 1fr;
+  }
+
+
+  .iya-info {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .divulgacion-final__grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .divulgacion-hero {
+    min-height: 780px;
+
+    background-position: 65% center;
+  }
+
+
+  .divulgacion-hero__container {
+    padding-bottom: 45px;
+  }
+
+
+  .divulgacion-hero h1 {
+    font-size: 58px;
+  }
+
+
+  .divulgacion-intro {
+    padding: 75px 0;
+  }
+
+
+  .divulgacion-amauta,
+  .divulgacion-tourism,
+  .divulgacion-iya {
+    padding: 80px 0;
+  }
+
+
+  .amauta-gallery {
+    grid-template-columns: 1fr;
+
+    grid-template-rows: none;
+  }
+
+
+  .amauta-gallery__main {
+    grid-row: auto;
+  }
+
+
+  .amauta-gallery figure {
+    height: 300px;
+  }
+
+
+  .amauta-features {
+    grid-template-columns: 1fr;
+  }
+
+
+  .amauta-detail__images {
+    grid-template-columns: 1fr;
+  }
+
+
+  .amauta-detail__images img {
+    height: 300px;
+  }
+
+
+  .tourism-hero {
+    height: 500px;
+  }
+
+
+  .tourism-hero__card {
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+
+    width: auto;
+  }
+
+
+  .tourism-story__image img {
+    height: 330px;
+  }
+
+
+  .tourism-celestial {
+    grid-template-columns: 1fr;
+  }
+
+
+  .tourism-celestial__image {
+    height: 320px;
+  }
+
+
+  .student-trips__image {
+    min-height: 300px;
+  }
+
+
+  .student-trips__content {
+    padding: 35px 25px;
+  }
+
+
+  .iya-stat {
+    width: auto;
+  }
+
+
+  .iya-gallery {
+    grid-template-columns:
+      1fr 1fr;
+
+    grid-auto-rows: 180px;
+  }
+
+
+  .iya-gallery__item--large {
+    grid-column:
+      1 / -1;
+
+    grid-row:
+      span 2;
+  }
+
+
+  .divulgacion-final {
+    padding: 80px 0;
+  }
+
+
+  .divulgacion-final__actions {
+    flex-direction: column;
+  }
+
+}

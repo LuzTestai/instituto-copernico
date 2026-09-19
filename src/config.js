@@ -1,0 +1,1 @@
+export const BOOK_URL = 'https://TU-LINK-DEL-LIBRO.com';
