@@ -13,6 +13,7 @@ import NewsPage from '../pages/NewsPage'
 import DivulgacionPage from '../pages/DivulgacionPage'
 import InvestigacionPage from '../pages/InvestigacionPage'
 import NewsDetailPage from '../pages/NewsDetailPage'
+import ContactPage from '../pages/ContactPage'
 // Página especial del eclipse
 import EclipsePage from '../pages/eclipse/EclipsePage'
 
@@ -61,7 +62,10 @@ function AppRouter() {
             element={<InvestigacionPage />}
           />
 
-
+          <Route
+            path="/contacto"
+            element={<ContactPage />}
+          />
         </Route>
 
 

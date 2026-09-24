@@ -53,6 +53,9 @@ function Footer() {
             <Link to="/investigacion">
               Investigación
             </Link>
+             <Link to="/contacto">
+              Contacto
+            </Link>
           </div>
 
           {/* EXPERIENCIAS */}
@@ -108,6 +111,10 @@ function Footer() {
           </p>
 
           <div className="institutional-footer__bottom-links">
+              <Link to="/contacto">
+              Contacto
+            </Link>
+
             <Link to="/eclipse-2027">
               Eclipse 2027
             </Link>

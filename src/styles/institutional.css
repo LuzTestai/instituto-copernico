@@ -143,88 +143,42 @@
   color:
     white;
 }
+/* ========================================
+   LOGO COPÉRNICO NAVBAR
+======================================== */
 
-
-.institutional-navbar__logo {
-  position:
-    relative;
-
-  width:
-    42px;
-
-  height:
-    42px;
-
-  display:
-    grid;
-
-  place-items:
-    center;
-
-  border:
-    1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.45
-    );
-
-  border-radius:
-    50%;
+.institutional-navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
+.institutional-navbar__brand-logo {
+  display: block;
 
-.institutional-navbar__logo-orbit {
-  position:
-    absolute;
+  width: 52px;
+  height: 52px;
 
-  width:
-    28px;
+  object-fit: contain;
 
-  height:
-    14px;
-
-  border:
-    1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.7
-    );
-
-  border-radius:
-    50%;
-
-  transform:
-    rotate(-25deg);
+  flex-shrink: 0;
 }
 
+.institutional-navbar__brand-text {
+  display: flex;
+  flex-direction: column;
 
-.institutional-navbar__logo-planet {
-  width:
-    7px;
-
-  height:
-    7px;
-
-  border-radius:
-    50%;
-
-  background:
-    var(--color-gold-300);
-
-  box-shadow:
-    0 0 10px
-    rgba(
-      239,
-      197,
-      114,
-      0.55
-    );
+  line-height: 0.9;
 }
 
+.institutional-navbar__brand-text strong {
+  font-size: 17px;
+}
+
+.institutional-navbar__brand-text > span {
+  font-size: 17px;
+}
 
 .institutional-navbar__brand-text {
   display:
@@ -1156,14 +1110,12 @@ span:last-child {
       16px;
   }
 
-
-  .institutional-navbar__logo {
-    width:
-      36px;
-
-    height:
-      36px;
-  }
+.institutional-navbar__brand-logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
 
 
   .institutional-footer__top {

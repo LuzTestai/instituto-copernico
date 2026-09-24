@@ -22,6 +22,10 @@ const NAV_ITEMS = [
     label: 'Investigación',
     path: '/investigacion',
   },
+   {
+    label: 'Contacto',
+    path: '/contacto',
+  },
 ]
 
 function Navbar() {
@@ -65,10 +69,11 @@ function Navbar() {
           className="institutional-navbar__brand"
           aria-label="Instituto Copérnico - Inicio"
         >
-          <span className="institutional-navbar__logo">
-            <span className="institutional-navbar__logo-orbit" />
-            <span className="institutional-navbar__logo-planet" />
-          </span>
+          <img
+            src="/images/copernico-logo.png"
+            alt="Instituto Copérnico"
+            className="institutional-navbar__brand-logo"
+          />
 
           <span className="institutional-navbar__brand-text">
             <strong>Instituto</strong>
