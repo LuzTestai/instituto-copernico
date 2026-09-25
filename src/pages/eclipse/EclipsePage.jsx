@@ -41,27 +41,27 @@ const eclipseFacts = [
 const safetyItems = [
   {
     number: '01',
-    title: 'Usá protección solar',
+    title: 'Durante todo el eclipse',
     text:
-      'Utilizá gafas para eclipses o visores solares diseñados específicamente para la observación directa del Sol.',
+      'En un eclipse anular la Luna nunca cubre completamente el Sol. El anillo de luz que permanece visible sigue siendo luz solar directa, por lo que la protección debe utilizarse durante toda la observación.',
   },
   {
     number: '02',
-    title: 'No sirven anteojos comunes',
+    title: 'Menos brillo no significa menos riesgo',
     text:
-      'Los anteojos de sol, incluso los muy oscuros, no brindan la protección necesaria para observar el Sol.',
+      'Aunque gran parte del Sol esté cubierta y parezca menos brillante, sigue siendo peligroso mirarlo directamente. Una lesión en la retina puede producirse sin dolor inmediato.',
   },
   {
     number: '03',
-    title: 'Protegé cámaras y telescopios',
+    title: 'Esto NO protege tus ojos',
     text:
-      'Todo instrumento óptico necesita un filtro solar adecuado colocado delante de la apertura.',
+      'Radiografías, negativos fotográficos, vidrios ahumados, anteojos de sol comunes y filtros caseros no son métodos adecuados para observar directamente el Sol.',
   },
   {
     number: '04',
-    title: 'No retires la protección',
+    title: 'Observación segura',
     text:
-      'En un eclipse anular nunca existe una fase de totalidad: siempre queda parte del Sol visible.',
+      'Utilizá gafas o visores para eclipses que cumplan la norma ISO 12312-2, filtros solares específicos para instrumentos u observación indirecta mediante proyección.',
   },
 ]
 
@@ -833,256 +833,517 @@ function EclipsePage() {
 
         </section>
 
+{/* ========================================
+    KIT ESCOLAR
+======================================== */}
+
+<section
+  className="eclipse-kit eclipse-kit--school"
+  id="kit-escolar"
+>
+  <div className="eclipse-container eclipse-kit__grid">
+
+    <div className="eclipse-kit__content">
+
+      <span className="eclipse-section-number">
+        06
+      </span>
+
+      <span className="eclipse-eyebrow">
+        EDUCACIÓN · CIENCIA · OBSERVACIÓN
+      </span>
+
+      <h2>
+        Kit
+        <span>
+          Escolar.
+        </span>
+      </h2>
+
+      <p className="eclipse-kit__lead">
+        Una herramienta para aprender,
+        comprender y observar con seguridad
+        el eclipse anular de Sol del
+        <strong> 6 de febrero de 2027.</strong>
+      </p>
+
+      <div className="eclipse-kit__rule" />
+
+      <p>
+        Incluye una
+        <strong> guía educativa de 24 páginas</strong>,
+        especialmente pensada como material
+        de apoyo para alumnos, docentes y
+        familias, y
+        <strong>
+          {' '}gafas para observación solar
+          certificadas ISO 12312-2.
+        </strong>
+      </p>
+
+      <p>
+        Ideal para
+        <strong>
+          {' '}colegios, instituciones educativas
+          y actividades de divulgación científica.
+        </strong>
+      </p>
+
+      <div className="eclipse-kit__features">
+
+        <div>
+          <span>01</span>
+
+          <p>
+            Guía educativa
+            <strong>24 páginas</strong>
+          </p>
+        </div>
+
+        <div>
+          <span>02</span>
+
+          <p>
+            Observación
+            <strong>segura</strong>
+          </p>
+        </div>
+
+        <div>
+          <span>03</span>
+
+          <p>
+            Gafas
+            <strong>ISO 12312-2</strong>
+          </p>
+        </div>
+
+      </div>
+
+      <Link
+        to="/contacto"
+        className="eclipse-button eclipse-button--gold eclipse-kit__button"
+      >
+        Consultar por el kit
+
+        <span>
+          →
+        </span>
+      </Link>
+
+    </div>
 
 
-        {/* ========================================
-            SAFETY
-        ======================================== */}
+    <div className="eclipse-kit__visual">
 
-        <section
-          className="eclipse-safety"
-          id="seguridad"
-        >
+      <div className="eclipse-kit__image-frame">
 
-          <div className="eclipse-container">
+        <img
+          src="/images/eclipse/kit-escolar.jpeg"
+          alt="Kit escolar para la observación del eclipse anular de Sol de 2027"
+        />
 
-            <div className="eclipse-safety__heading">
+      </div>
 
-              <div>
+      <div className="eclipse-kit__badge">
 
-                <span className="eclipse-section-number">
-                  04
-                </span>
+        <small>
+          KIT
+        </small>
 
-                <span className="eclipse-eyebrow">
-                  OBSERVACIÓN SEGURA
-                </span>
+        <strong>
+          ESCOLAR
+        </strong>
 
+        <span>
+          2027
+        </span>
 
-                <h2>
-                  Mirar el Sol
-                  <span>
-                    requiere protección.
-                  </span>
-                </h2>
+      </div>
 
-              </div>
+    </div>
 
-
-              <p>
-                La observación solar debe hacerse
-                siempre con equipamiento diseñado
-                específicamente para filtrar la
-                radiación del Sol.
-              </p>
-
-            </div>
-
-
-            <div className="eclipse-safety__grid">
-
-              {safetyItems.map(
-                (item) => (
-
-                  <article
-                    className="eclipse-safety-card"
-                    key={item.number}
-                  >
-
-                    <div className="eclipse-safety-card__top">
-
-                      <span>
-                        {item.number}
-                      </span>
-
-                      <strong>
-                        +
-                      </strong>
-
-                    </div>
-
-
-                    <h3>
-                      {item.title}
-                    </h3>
-
-                    <p>
-                      {item.text}
-                    </p>
-
-                  </article>
-
-                )
-              )}
-
-            </div>
-
-
-            <div className="eclipse-warning">
-
-              <div className="eclipse-warning__symbol">
-
-                !
-
-              </div>
-
-
-              <div>
-
-                <strong>
-                  IMPORTANTE
-                </strong>
-
-                <p>
-                  Nunca mires directamente al Sol
-                  a través de binoculares, cámaras
-                  o telescopios sin un filtro solar
-                  adecuado colocado en la parte
-                  frontal del instrumento.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
+  </div>
+</section>
 
 
 
-        {/* ========================================
-            CURIOSITIES
-        ======================================== */}
+{/* ========================================
+    KIT TURÍSTICO
+======================================== */}
 
-        <section className="eclipse-curiosities">
+<section
+  className="eclipse-kit eclipse-kit--tourism"
+  id="kit-turistico"
+>
+  <div className="eclipse-container eclipse-kit__grid eclipse-kit__grid--reverse">
 
-          <div className="eclipse-container eclipse-curiosities__grid">
+    <div className="eclipse-kit__visual">
 
-            <div className="eclipse-curiosities__title">
+      <div className="eclipse-kit__image-frame">
 
-              <span className="eclipse-eyebrow">
-                UNA CUESTIÓN DE PERSPECTIVA
+        <img
+          src="/images/eclipse/kit-turistico.jpeg"
+          alt="Kit turístico para la observación del eclipse anular de Sol de 2027"
+        />
+
+      </div>
+
+      <div className="eclipse-kit__badge">
+
+        <small>
+          KIT
+        </small>
+
+        <strong>
+          TURÍSTICO
+        </strong>
+
+        <span>
+          2027
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div className="eclipse-kit__content">
+
+      <span className="eclipse-section-number">
+        05
+      </span>
+
+      <span className="eclipse-eyebrow">
+        TURISMO · EXPERIENCIA · SEGURIDAD
+      </span>
+
+      <h2>
+        Kit
+        <span>
+          Turístico.
+        </span>
+      </h2>
+
+      <p className="eclipse-kit__lead">
+        Una propuesta para
+        <strong>
+          {' '}vivir y disfrutar de manera segura
+        </strong>
+        {' '}uno de los grandes acontecimientos
+        astronómicos de 2027.
+      </p>
+
+      <div className="eclipse-kit__rule" />
+
+      <p>
+        Incluye una
+        <strong> guía de 24 páginas</strong>
+        {' '}con información sobre el eclipse,
+        su recorrido, horarios, recomendaciones
+        para la observación y medidas de
+        prevención.
+      </p>
+
+      <p>
+        La guía está acompañada de
+        <strong>
+          {' '}gafas para observación solar
+          certificadas ISO 12312-2.
+        </strong>
+      </p>
+
+      <p>
+        Ideal para
+        <strong>
+          {' '}hoteles, municipios, oficinas de
+          turismo, comercios y visitantes
+        </strong>
+        {' '}de las localidades alcanzadas por
+        el eclipse.
+      </p>
+
+      <Link
+        to="/contacto"
+        className="eclipse-button eclipse-button--gold eclipse-kit__button"
+      >
+        Consultar por el kit
+
+        <span>
+          →
+        </span>
+      </Link>
+
+    </div>
+
+  </div>
+
+
+  {/* PRESENTACIÓN DEL KIT */}
+
+  <div className="eclipse-container">
+
+    <div className="eclipse-kit-package">
+
+      <div className="eclipse-kit-package__image">
+
+        <img
+          src="/images/eclipse/kit-presentacion.jpeg"
+          alt="Presentación de la guía del eclipse junto a gafas para observación solar"
+        />
+
+      </div>
+
+      <div className="eclipse-kit-package__content">
+
+        <span className="eclipse-eyebrow">
+          TODO EN UN MISMO KIT
+        </span>
+
+        <h3>
+          Una guía para comprender.
+          <span>
+            Gafas para observar.
+          </span>
+        </h3>
+
+        <p>
+          Una propuesta preparada para acompañar
+          la experiencia del eclipse desde la
+          información y la observación segura.
+        </p>
+
+        <div className="eclipse-kit-package__tags">
+
+          <span>
+            GUÍA · 24 PÁGINAS
+          </span>
+
+          <span>
+            GAFAS SOLARES
+          </span>
+
+          <span>
+            ISO 12312-2
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+     {/* ========================================
+    SAFETY
+======================================== */}
+
+<section
+  className="eclipse-safety"
+  id="seguridad"
+>
+  <div className="eclipse-container">
+
+    <div className="eclipse-safety__heading">
+
+      <div>
+
+        <span className="eclipse-section-number">
+          06
+        </span>
+
+        <span className="eclipse-eyebrow">
+          OBSERVACIÓN SEGURA
+        </span>
+
+        <h2>
+          Mirar el Sol
+          <span>
+            requiere protección.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div className="eclipse-safety__intro">
+
+        <strong>
+          Mirar el Sol sin la protección adecuada
+          puede producir daños graves en la retina.
+        </strong>
+
+        <p>
+          Durante un eclipse anular nunca existe
+          una fase en la que sea seguro mirar
+          directamente al Sol sin protección
+          específicamente diseñada para la
+          observación solar.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    {/* CARDS */}
+
+    <div className="eclipse-safety__grid">
+
+      {safetyItems.map(
+        (item) => (
+
+          <article
+            className="eclipse-safety-card"
+            key={item.number}
+          >
+
+            <div className="eclipse-safety-card__top">
+
+              <span>
+                {item.number}
               </span>
 
-              <h2>
-                La Luna no cambia
-                <span>
-                  de tamaño.
-                </span>
-              </h2>
+              <strong>
+                +
+              </strong>
 
             </div>
 
+            <h3>
+              {item.title}
+            </h3>
 
-            <div className="eclipse-curiosities__copy">
+            <p>
+              {item.text}
+            </p>
 
-              <p>
-                La órbita lunar no es un círculo
-                perfecto. La distancia entre la
-                Tierra y la Luna varía.
-              </p>
+          </article>
 
-              <p>
-                Cuando el eclipse ocurre con la
-                Luna relativamente alejada, su
-                tamaño aparente es demasiado
-                pequeño para cubrir completamente
-                al Sol.
-              </p>
+        )
+      )}
+
+    </div>
 
 
-              <div className="eclipse-curiosities__formula">
+    {/* ISO */}
 
-                <span>
-                  DISTANCIA
-                </span>
+    <div className="eclipse-safety-standard">
 
-                <strong>
-                  +
-                </strong>
+      <div className="eclipse-safety-standard__number">
+        ISO
+      </div>
 
-                <span>
-                  PERSPECTIVA
-                </span>
+      <div>
 
-                <strong>
-                  =
-                </strong>
+        <span className="eclipse-eyebrow">
+          PROTECCIÓN CERTIFICADA
+        </span>
 
-                <span>
-                  ANULARIDAD
-                </span>
+        <h3>
+          Buscá la norma
+          <strong> ISO 12312-2</strong>
+        </h3>
 
-              </div>
+        <p>
+          Para observar directamente el eclipse,
+          utilizá gafas o visores solares diseñados
+          específicamente para este fin y que
+          cumplan con la norma internacional
+          ISO 12312-2.
+        </p>
 
-            </div>
+      </div>
 
-          </div>
-
-        </section>
-
-
-
-        {/* ========================================
-            INSTITUTE
-        ======================================== */}
-
-        <section className="eclipse-institute">
-
-          <div className="eclipse-container eclipse-institute__grid">
-
-            <div className="eclipse-institute__symbol">
-
-              <div className="eclipse-institute__orbit">
-
-                <span />
-
-              </div>
-
-            </div>
+    </div>
 
 
-            <div className="eclipse-institute__content">
+    {/* WARNING */}
 
-              <span className="eclipse-eyebrow">
-                INSTITUTO COPÉRNICO
-              </span>
+    <div className="eclipse-warning">
 
+      <div className="eclipse-warning__symbol">
+        !
+      </div>
 
-              <h2>
-                Más de medio siglo
-                <span>
-                  mirando el cielo.
-                </span>
-              </h2>
+      <div>
 
+        <strong>
+          IMPORTANTE · TELESCOPIOS, BINOCULARES Y CÁMARAS
+        </strong>
 
-              <p>
-                Astronomía, educación,
-                investigación y divulgación
-                científica desde 1973.
-              </p>
+        <p>
+          Nunca mires el Sol a través de estos
+          instrumentos utilizando solamente gafas
+          para eclipses delante de los ojos.
+          Los instrumentos ópticos concentran la
+          radiación solar y necesitan sus propios
+          filtros solares colocados delante del
+          objetivo, antes de que la luz ingrese
+          al instrumento.
+        </p>
 
+      </div>
 
-              <Link
-                to="/"
-                className="eclipse-button eclipse-button--ghost-light"
-              >
-                Conocer el Instituto
-
-                <span>
-                  →
-                </span>
-              </Link>
-
-            </div>
-
-          </div>
-
-        </section>
+    </div>
 
 
+    {/* EDUCATION + ARTICLE */}
+
+    <div className="eclipse-safety-article">
+
+      <div className="eclipse-safety-article__content">
+
+        <span className="eclipse-eyebrow">
+          INFORMARSE TAMBIÉN ES PROTEGERSE
+        </span>
+
+        <h3>
+          La mejor protección
+          <span>
+            comienza con la información.
+          </span>
+        </h3>
+
+        <p>
+          El eclipse ocurrirá el 6 de febrero de
+          2027. Informarnos con anticipación y
+          enseñar cómo observarlo correctamente
+          permite que este acontecimiento pueda
+          disfrutarse de manera segura en escuelas,
+          familias y comunidades.
+        </p>
+
+      </div>
+
+
+      <a
+        href="https://www.aguadaescondida.com.ar/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="eclipse-safety-article__link"
+      >
+        <small>
+          NOTA COMPLETA
+        </small>
+
+        <span>
+          Todo lo que necesitás saber
+          sobre la protección ocular
+        </span>
+
+        <strong>
+          Leer artículo ↗
+        </strong>
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
         {/* ========================================
             FINAL CTA
